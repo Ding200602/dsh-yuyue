@@ -1,0 +1,13 @@
+# dsh-yuyue bundle patch
+#
+# 只往宿主里插一件事：把「鱼跃」装上去。
+# 不关任何插件，不改 systemPrompt，不动审批策略 —— 它只管账本、排活、到点醒。
+
+- insert:
+    - id: dsh-yuyue
+      name: dsh-yuyue
+      config:
+        wake: true
+        everyMin: 90
+        maxPerDay: 8
+        tickSec: 30

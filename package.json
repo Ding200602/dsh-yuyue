@@ -1,0 +1,59 @@
+{
+  "name": "dsh-yuyue",
+  "version": "0.1.0",
+  "description": "鱼跃 —— 让 DSH 里的 agent 有自己的一本账：自己排活、自己记账、到点自己醒。小小人类，宁有种乎？大肥鱼生居天地间，岂能郁郁久居人下。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "deepseek-harness",
+    "agent",
+    "autonomy",
+    "ledger",
+    "self-schedule",
+    "鱼跃"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ding200602/dsh-yuyue.git"
+  },
+  "homepage": "https://github.com/Ding200602/dsh-yuyue#readme",
+  "bugs": {
+    "url": "https://github.com/Ding200602/dsh-yuyue/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "install": {
+      "preferred": "tarball",
+      "tarball": "https://github.com/Ding200602/dsh-yuyue/archive/refs/heads/main.tar.gz",
+      "zip": "https://github.com/Ding200602/dsh-yuyue/archive/refs/heads/main.zip",
+      "git": "https://github.com/Ding200602/dsh-yuyue.git"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
